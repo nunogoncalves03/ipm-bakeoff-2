@@ -1,2 +1,1 @@
-iteration;attempt;hits;missses;accuracy;total time;time per target;time per target (+penalty)
-        
+Iteration;Attempt;Hits;Misses;Accuracy;Total time taken;Average time per target;Average time per target (+penalty)

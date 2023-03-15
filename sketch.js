@@ -98,6 +98,20 @@ function printAndSavePerformance()
   text("Average time per target: " + time_per_target + "s", width/2, 180);
   text("Average time for each target (+ penalty): " + target_w_penalty + "s", width/2, 220);
 
+	let iteration = 1;
+	console.log(
+		[
+			iteration,
+			attempt + 1,
+			hits,
+			misses,
+			accuracy,
+			test_time,
+			time_per_target,
+			target_w_penalty
+		].join(";")
+	);
+
   // Saves results (DO NOT CHANGE!)
   let attempt_data = 
   {
