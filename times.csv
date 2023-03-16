@@ -1,1 +1,5 @@
-Iteration;Attempt;Hits;Misses;Accuracy;Total time taken;Average time per target;Average time per target (+penalty)
+Iteration ;Attempt ;Hits ;Misses ;Accuracy ;Total time taken  ;Average time per target ;Average time per target (+penalty)
+        1 ;      1 ;  12 ;     0 ;     100 ;79.21729999999702 ;                  6.601 ;                             6.601
+        1 ;      2 ;  12 ;     0 ;     100 ;68.90009999999404 ;                  5.741 ;                             5.741
+        1 ;      1 ;  12 ;     0 ;     100 ;67.8675           ;                  5.655 ;                             5.655
+        1 ;      2 ;  12 ;     0 ;     100 ;44.9025           ;                  3.741 ;                             3.741
