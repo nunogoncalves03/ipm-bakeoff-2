@@ -18,13 +18,18 @@ class Target {
 	// and its label
 	draw() {
 		// Draw target
-		fill(color(155, 155, 155));
+        fill(102, 237, 237, 50);
+        stroke(255,255,255, 125);
+        strokeWeight(1);
 		circle(this.x, this.y, this.width);
 
 		// Draw label
+        noStroke();
 		textFont("Arial", 12);
+        textStyle(BOLD);
 		fill(color(255, 255, 255));
 		textAlign(CENTER);
 		text(this.label, this.x, this.y);
+        textStyle(NORMAL);
 	}
 }
