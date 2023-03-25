@@ -34,13 +34,13 @@ function drawUserIDScreen()
   display_size_label.id('input');
   display_size_label.position(10, display_size_pos_y_offset);
 
-  let briefing1_pos_y_offset = display_size_pos_y_offset + display_size_form.size().height + 20;
+  let briefing1_pos_y_offset = display_size_pos_y_offset + display_size_form.size().height + 15;
   fill(color(255, 255, 255));
   briefing1 = createDiv("- The words are displayed in Alphabetical order (by row/ horizontally)");
   briefing1.id('main_text');
   briefing1.position(10, briefing1_pos_y_offset);
 
-  let briefing2_pos_y_offset = briefing1_pos_y_offset + briefing1.size().height + 10;
+  let briefing2_pos_y_offset = briefing1_pos_y_offset + briefing1.size().height + 7;
   fill(color(255, 255, 255));
   briefing2 = createDiv("- The background color changes everytime the letter changes (words starting with the same letter");
   briefing2.id('main_text');
@@ -52,7 +52,7 @@ function drawUserIDScreen()
   briefing3.id('main_text');
   briefing3.position(10, briefing3_pos_y_offset);
 
-  let briefing4_pos_y_offset = briefing3_pos_y_offset + briefing3.size().height + 10;
+  let briefing4_pos_y_offset = briefing3_pos_y_offset + briefing3.size().height + 7;
   fill(color(255, 255, 255));
   briefing4 = createDiv("- Above the first word of each letter, the starting letter is highlighted");
   briefing4.id('main_text');

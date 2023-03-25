@@ -100,7 +100,7 @@ class Target {
             textStyle(BOLD);
             fill(color(9, 255, 5));
             textAlign(CENTER);
-            text(this.label[0], this.x, this.y - this.width/2 + 40);
+            text(this.label[0], this.x, this.y - this.width/2 + 30);
             textStyle(NORMAL);
         }
 
