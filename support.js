@@ -33,6 +33,31 @@ function drawUserIDScreen()
   display_size_label = createDiv("Display size in inches");         // create label
   display_size_label.id('input');
   display_size_label.position(10, display_size_pos_y_offset);
+
+  let briefing1_pos_y_offset = display_size_pos_y_offset + display_size_form.size().height + 20;
+  fill(color(255, 255, 255));
+  briefing1 = createDiv("- The words are displayed in Alphabetical order (by row/ horizontally)");
+  briefing1.id('main_text');
+  briefing1.position(10, briefing1_pos_y_offset);
+
+  let briefing2_pos_y_offset = briefing1_pos_y_offset + briefing1.size().height + 10;
+  fill(color(255, 255, 255));
+  briefing2 = createDiv("- The background color changes everytime the letter changes (words starting with the same letter");
+  briefing2.id('main_text');
+  briefing2.position(10, briefing2_pos_y_offset);
+
+  let briefing3_pos_y_offset = briefing2_pos_y_offset + briefing2.size().height + 3;
+  fill(color(255, 255, 255));
+  briefing3 = createDiv("have the same background color)");
+  briefing3.id('main_text');
+  briefing3.position(10, briefing3_pos_y_offset);
+
+  let briefing4_pos_y_offset = briefing3_pos_y_offset + briefing3.size().height + 10;
+  fill(color(255, 255, 255));
+  briefing4 = createDiv("- Above the first word of each letter, the starting letter is highlighted");
+  briefing4.id('main_text');
+  briefing4.position(10, briefing4_pos_y_offset);
+  
   
   // 3. Start button
   start_button = createButton('START');
@@ -77,7 +102,11 @@ function startTest()
     student_ID_label.remove();
     display_size_form.remove();
     display_size_label.remove();
-    start_button.remove();  
+    start_button.remove();
+    briefing1.remove()
+    briefing2.remove()
+    briefing3.remove()
+    briefing4.remove()
 
     // Goes fullscreen and starts test
     fullscreen(!fullscreen());

@@ -6,6 +6,29 @@ const blue = "rgba(102, 237, 237, 0.2)"
 const yellow = "rgba(255, 215, 10, 0.24)"
 const violet = "rgba(172, 102, 237, 0.31)"
 
+const firstWordsOfEachLetter = [
+    "0% Milk",
+    "Anjou",
+    "Banana",
+    "Cabbage",
+    "Fat Milk",
+    "Galia Melon",
+    "Kaiser",
+    "Leek",
+    "Mandarin Juice",
+    "Nectarine",
+    "Oat Milk",
+    "Papaya",
+    "Red Beet",
+    "Satsumas",
+    "Tomato",
+    "Vanilla Yoghurt",
+    "Watermelon",
+    "Yellow Onion",
+    "Zucchini",
+]
+
+
 function decideColor(label) {
     switch (label[0]) {
         case '0':
@@ -41,6 +64,10 @@ function decideColor(label) {
     }
 }
 
+function drawFirstLetter(label) {
+    return firstWordsOfEachLetter.some(x => x == label)
+}
+
 // Target class (position and width)
 class Target {
     constructor(x, y, w, l, id) {
@@ -66,6 +93,16 @@ class Target {
         stroke(255, 255, 255, 125);
         strokeWeight(1);
         circle(this.x, this.y, this.width);
+
+        if (drawFirstLetter(this.label)) {
+            noStroke();
+            textFont("Arial", 22);
+            textStyle(BOLD);
+            fill(color(9, 255, 5));
+            textAlign(CENTER);
+            text(this.label[0], this.x, this.y - this.width/2 + 40);
+            textStyle(NORMAL);
+        }
 
         // Draw label
         noStroke();
